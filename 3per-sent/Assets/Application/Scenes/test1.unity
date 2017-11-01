@@ -1265,6 +1265,10 @@ MonoBehaviour:
     swen: {fileID: 11400000, guid: 4e4d8787008d44a8585e33d27e4b09eb, type: 2}
   - delayTime: 3
     swen: {fileID: 11400000, guid: fd8957a67edd84330a87de9758d5c523, type: 2}
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 4e4d8787008d44a8585e33d27e4b09eb, type: 2}
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 235692bbdb630413b8f5c5ff9aef99b1, type: 2}
 --- !u!4 &2025417923
 Transform:
   m_ObjectHideFlags: 0

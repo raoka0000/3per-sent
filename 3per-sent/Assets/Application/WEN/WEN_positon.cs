@@ -8,7 +8,7 @@ namespace PlayScene.WaveEmitterNode{
 public class WEN_positon : StageWaveEmitterNode {
 	[System.Serializable]
 	public class EnemyAndPositon{
-		public Enemy enemy;
+		public GameObject enemy;
 		public Vector2 pos;
 	}
 
