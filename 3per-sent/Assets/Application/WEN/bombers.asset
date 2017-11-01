@@ -9,11 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 412d4ef4f491d44649841cacbba7f7b8, type: 3}
-  m_Name: time_rubbit1
+  m_Name: bombers
   m_EditorClassIdentifier: 
   enemys:
-  - {fileID: 1576368768741734, guid: 153c261643a0a458ba0f9374d2b4275a, type: 2}
-  leftUpPoint: {x: 10, y: 3}
-  rightDwonPoint: {x: 11, y: -3}
-  prob: 0.15
-  during: 100
+  - {fileID: 1267932306704802, guid: dfba3461c56bb41998b9d83938443b9a, type: 2}
+  - {fileID: 1900066927990034, guid: b48b5aa4b688f46f6852a1367d5d9df1, type: 2}
+  leftUpPoint: {x: 10, y: 5}
+  rightDwonPoint: {x: 10, y: -5}
+  prob: 0.4
+  during: 40

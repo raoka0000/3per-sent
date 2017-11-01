@@ -1462,6 +1462,8 @@ MonoBehaviour:
     swen: {fileID: 11400000, guid: 4e4d8787008d44a8585e33d27e4b09eb, type: 2}
   - delayTime: 3
     swen: {fileID: 11400000, guid: 235692bbdb630413b8f5c5ff9aef99b1, type: 2}
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 076a3bc62e4174e8dbacdd40937a7e16, type: 2}
 --- !u!4 &2025417923
 Transform:
   m_ObjectHideFlags: 0
@@ -1740,7 +1742,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 122450561
+  randomSeed: 246407991
   InitialModule:
     serializedVersion: 3
     enabled: 1
