@@ -49,7 +49,7 @@ public class Test : MonoBehaviour {
 			ObjectPool.instance.GetGameObject (enemy3, new Vector2(x,y), this.gameObject.transform.rotation);
 		}
 		timer4 += Time.deltaTime;
-		if (timer4 > 60f) {
+		if (timer4 > 10f) {
 			//オブジェクトの座標
 			ObjectPool.instance.GetGameObject (enemy4, new Vector2(15,0), this.gameObject.transform.rotation);
 			timer4 = 0;

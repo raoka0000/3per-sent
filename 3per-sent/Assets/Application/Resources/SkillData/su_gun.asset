@@ -8,10 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1132bc5e7f2a0406d8fd4280a6c2d7cd, type: 3}
-  m_Name: st_muteki
+  m_Script: {fileID: 11500000, guid: 0c75df31809f649a8a4ee6bca33b4ca8, type: 3}
+  m_Name: su_gun
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 7ff171f5b24254922ba6e6781293b5f6, type: 3}
+  image: {fileID: 21300000, guid: 40f6804482e0e4828b432db8309ecc9e, type: 3}
   skillType: 0
-  status: 2
+  friend: {fileID: 1789716273613980, guid: 64d4eaaf52d6c4d56ba6d2a07837123c, type: 2}
   duration: 10

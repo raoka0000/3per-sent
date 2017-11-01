@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0ebad070564407fb8058b0263f5f82, type: 3}
   m_Name: tm_10
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 5e2035412c6e74c1bbafaed9cf46eb93, type: 3}
   skillType: 0
   duration: 5

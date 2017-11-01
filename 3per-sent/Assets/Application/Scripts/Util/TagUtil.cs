@@ -17,6 +17,8 @@ public class TagUtil{
 		switch (a){
 		case "Player":
 			return b == "Enemy";
+		case "PlayerFriend":
+			return b == "Enemy";
 		case "Enemy":
 			return b == "Player";
 		case "PlayerBullet":
@@ -31,6 +33,8 @@ public class TagUtil{
 
 	public static bool IsFriendTag(string a, string b){
 		switch (a){
+		case "PlayerFriend":
+			return b == "Player";
 		case "Enemy":
 			return b == "Enemy";
 		case "PlayerBullet":
@@ -42,11 +46,30 @@ public class TagUtil{
 		}
 		return false;
 	}
+	public static string GetFriendTag(string a){
+		switch (a){
+		case "Player":
+			return "Player";
+		case "PlayerFriend":
+			return "Player";
+		case "Enemy":
+			return "Enemy";
+		case "PlayerBullet":
+			return "Player";
+		case "EnemyBullet":
+			return "Enemy";
+		default:
+			break;
+		}
+		return "";
+	}
 
 
 	public static bool IsHitBulletTag(string a, string b){
 		switch (a){
 		case "Player":
+			return b == "EnemyBullet";
+		case "PlayerFriend":
 			return b == "EnemyBullet";
 		case "Enemy":
 			return b == "PlayerBullet";
@@ -60,6 +83,8 @@ public class TagUtil{
 		switch (a){
 		case "Player":
 			return b == "Enemy";
+		case "PlayerFriend":
+			return b == "Enemy";
 		case "Enemy":
 			return b == "Player";
 		default:
@@ -71,6 +96,8 @@ public class TagUtil{
 	public static string GetHomingActorTag(string a){
 		switch (a){
 		case "Player":
+			return "Enemy";
+		case "PlayerFriend":
 			return "Enemy";
 		case "Enemy":
 			return "Player";

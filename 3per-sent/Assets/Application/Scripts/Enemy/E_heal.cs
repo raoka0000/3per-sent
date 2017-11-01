@@ -10,7 +10,11 @@ public class E_heal : Enemy {
 	private GameObject target;
 	private float angle = 0;
 	private Vector3 tmp = Vector3.zero;
+	[SerializeField]
 	private float speed = 1;
+	[SerializeField]
+	private float shotInterval = 1;
+
 
 	protected override void Init(){
 		
@@ -20,17 +24,24 @@ public class E_heal : Enemy {
 		AudioManager.instance.PlaySE (DEFINE.SHOT_SE,DEFINE.SHOT_SE_CH);
 	}
 	private float time = 0;
+	private Vector3 tmpvec = Vector3.one;
 	protected override void _Update () {
 		if (target == null) {
-			target = SetTarget (this.tag);
+			target = SetTarget (TagUtil.GetFriendTag(this.tag));
 		} else {
-			angle = GetAim (target);
+			tmpvec = target.transform.position;
+			tmpvec.x -= 1;
+			tmpvec.y += 1;
+			angle = GetAim (tmpvec);
 			tmp.x = Mathf.Cos (angle * Mathf.Deg2Rad);
 			tmp.y = Mathf.Sin (angle * Mathf.Deg2Rad);
-			transform.position += (tmp * speed * myDeltaTime);
+			tmpvec = transform.position + (tmp * speed * myDeltaTime);
+			if (Vector3.Distance (tmpvec, target.transform.position) > 1.0f) {
+				transform.position = tmpvec;
+			}
 		}
 		time += myDeltaTime;
-		if(time > 1f){
+		if(time > shotInterval){
 			bulletUnits.Shot (0);
 			time = 0;
 		}
@@ -45,9 +56,9 @@ public class E_heal : Enemy {
 		return null;
 	}
 
-	private float GetAim(GameObject tar) {
-		float dx = tar.transform.position.x - this.transform.position.x;
-		float dy = tar.transform.position.y - this.transform.position.y;
+	private float GetAim(Vector3 vec) {
+		float dx = vec.x - this.transform.position.x;
+		float dy = vec.y - this.transform.position.y;
 		float rad = Mathf.Atan2(dy, dx);
 		return rad * Mathf.Rad2Deg;
 	}

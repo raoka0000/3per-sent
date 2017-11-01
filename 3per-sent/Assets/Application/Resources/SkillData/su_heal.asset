@@ -8,10 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1132bc5e7f2a0406d8fd4280a6c2d7cd, type: 3}
-  m_Name: st_muteki
+  m_Script: {fileID: 11500000, guid: 0c75df31809f649a8a4ee6bca33b4ca8, type: 3}
+  m_Name: su_heal
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 7ff171f5b24254922ba6e6781293b5f6, type: 3}
+  image: {fileID: 21300000, guid: 7dcdac550623245fe991899f4906c957, type: 3}
   skillType: 0
-  status: 2
-  duration: 10
+  friend: {fileID: 1971985760385888, guid: 9d38585890f954b9f99a0c4a4394a30f, type: 2}
+  duration: 20

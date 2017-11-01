@@ -11,6 +11,7 @@ public class E_shield : Enemy {
 	
 	protected override void Init(){
 		this.transform.DOLocalMoveX(-75,150f).timeScale = timeScale;
+		this.transform.DOLocalMoveY(1.5f,1.5f).SetLoops (-1, LoopType.Yoyo).timeScale = timeScale;
 		this.transform.DOPunchScale (new Vector3(0.05f,0.05f,0), 0.5f, 10).SetLoops (-1, LoopType.Yoyo);
 	}
 
