@@ -25,6 +25,18 @@ public class Player : Actor {
 		this.Controller ();
 	}
 
+	protected override void setHp(int n){
+		if(n > maxHp){
+			n = maxHp;
+		}else if(n < 0){
+			n = 0;
+		}
+		this._hp = n;
+		UiManager.instance.UpdateHp (this._hp);
+		return;
+	}
+
+
 	//衝突時の判定.弾との衝突判定はActor.csに隠されている.
 	protected override void _OnTriggerEnter2D (Collider2D c){
 		string hitTagName = c.gameObject.tag;

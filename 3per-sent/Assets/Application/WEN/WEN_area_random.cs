@@ -24,10 +24,12 @@ public class WEN_area_random : StageWaveEmitterNode {
 	IEnumerator Call() {
 		Vector2 tmp = Vector2.zero;
 		for(float f = 0; f< during; f += 0.1f){
-			tmp.x = Random.Range(leftUpPoint.x, rightDwonPoint.x);
-			tmp.y = Random.Range(rightDwonPoint.y, leftUpPoint.y);
-			GameObject obj = enemys [Random.Range (0, enemys.Length)].gameObject;
-			ObjectPool.instance.GetGameObject (obj, tmp, obj.transform.rotation);
+			if (Random.value < prob) {
+				tmp.x = Random.Range(leftUpPoint.x, rightDwonPoint.x);
+				tmp.y = Random.Range(rightDwonPoint.y, leftUpPoint.y);
+				GameObject obj = enemys [Random.Range (0, enemys.Length)].gameObject;
+				ObjectPool.instance.GetGameObject (obj, tmp, obj.transform.rotation);
+			}
 			yield return new WaitForSeconds (0.1f);
 		}
 	}

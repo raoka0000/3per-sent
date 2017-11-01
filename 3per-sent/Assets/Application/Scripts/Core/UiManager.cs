@@ -9,6 +9,12 @@ public class UiManager : SingletonMonoBehaviour<UiManager> {
 	public Image skillImage;
 	public Text hpText;
 
+	public Image green;
+	public Image red;
+
+	private int pMaxHp = 0;
+
+
 	void Start() {
 		SetHp ();
 	}
@@ -24,6 +30,10 @@ public class UiManager : SingletonMonoBehaviour<UiManager> {
 
 	public void SetHp(){
 		hpText.text = "HP:" + EnvironmentEvent.instance.player.hp;
+	}
+		
+	public void UpdateHp(int hp){
+		green.fillAmount = (float)hp / (float)EnvironmentEvent.instance.player.maxHp;
 	}
 
 
