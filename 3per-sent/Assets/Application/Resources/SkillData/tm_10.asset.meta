@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b210d13b6f34c4e71ae6e097085f8e38
+labels:
+- Data
+- ScriptableObject
+- SkillObject_time
+timeCreated: 1508993359
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
