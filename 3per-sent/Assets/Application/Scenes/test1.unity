@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 236618494}
   - component: {fileID: 236618493}
   - component: {fileID: 236618492}
+  - component: {fileID: 236618496}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -243,6 +244,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &236618496
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 236618491}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &240742758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1233,51 @@ MonoBehaviour:
   scratchTexture: {fileID: 2800000, guid: 6205c27cc031f4e66b8ea90d1bfaa158, type: 3}
   shaderRGB: {fileID: 4800000, guid: 5d7f4c401ae8946bcb0d6ff68a9e7466, type: 3}
   shaderYUV: {fileID: 4800000, guid: 0e447868506ba49f0a73235b8a8b647a, type: 3}
+--- !u!1 &2025417921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2025417923}
+  - component: {fileID: 2025417922}
+  m_Layer: 0
+  m_Name: StageWaveEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2025417922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025417921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137d0678bf5b54bce82888cb833290dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sat:
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 4e4d8787008d44a8585e33d27e4b09eb, type: 2}
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: fd8957a67edd84330a87de9758d5c523, type: 2}
+--- !u!4 &2025417923
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025417921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2068875041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,7 +1543,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1887149804
+  randomSeed: -1661145962
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4499,7 +4556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2143424932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4511,10 +4568,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb6273095d784795ae1c111f7324799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
-  enemy2: {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
-  enemy3: {fileID: 1576368768741734, guid: 153c261643a0a458ba0f9374d2b4275a, type: 2}
-  enemy4: {fileID: 1537713900370364, guid: 4ac7c63385bb449a081079f0cb11a408, type: 2}
+  enemy: {fileID: 1537713900370364, guid: 4ac7c63385bb449a081079f0cb11a408, type: 2}
+  enemy2: {fileID: 1576368768741734, guid: 153c261643a0a458ba0f9374d2b4275a, type: 2}
+  enemy3: {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
+  enemy4: {fileID: 1265644654103756, guid: d142839caea3f4fbcb4e5de64bac1848, type: 2}
 --- !u!4 &2143424933
 Transform:
   m_ObjectHideFlags: 0

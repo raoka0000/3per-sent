@@ -55,7 +55,7 @@ public class Player : Actor {
 			EnvironmentEvent.instance.DoSlow (SCAN_STOPTIME);
 			enemy.Damaged (100);
 			EnvironmentEvent.instance.DoAberration (SCAN_STOPTIME / 4f);
-			AudioManager.instance.PlaySE ("heart1");
+			AudioManager.instance.PlaySE ("don");
 		} else {
 			EnvironmentEvent.instance.ShakeCamera (noise: true);
 			this.status.AddStatus (StatusType.invincible, HIT_INVINCIBLE_TIME);
