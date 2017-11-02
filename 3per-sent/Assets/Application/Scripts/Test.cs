@@ -20,14 +20,14 @@ public class Test : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timer += Time.deltaTime;
-		if (timer > 8.5f) {
+		if (timer > 0.5f) {
 			//オブジェクトの座標
 			float x = Random.Range(10f, 10f);
 			float y = Random.Range(-4.0f, 4.0f);
 			ObjectPool.instance.GetGameObject (enemy, new Vector2(x,y), this.gameObject.transform.rotation);
 			timer = 0;
 		}
-
+		/*
 		timer2 += Time.deltaTime;
 		if (timer2 > 0.8f) {
 			//オブジェクトの座標
@@ -53,7 +53,7 @@ public class Test : MonoBehaviour {
 			//オブジェクトの座標
 			ObjectPool.instance.GetGameObject (enemy4, new Vector2(15,0), this.gameObject.transform.rotation);
 			timer4 = 0;
-		}
+		}*/
 
 	}
 }
