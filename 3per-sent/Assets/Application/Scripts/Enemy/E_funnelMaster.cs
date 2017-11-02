@@ -15,6 +15,7 @@ public class E_funnelMaster : Enemy {
 	private int state = 0;
 	private Vector3 defPos = new Vector3(8f,0f,0f);
 	protected override void Init(){
+		this.transform.DOKill ();
 		firstAction ();
 	}
 
@@ -29,7 +30,7 @@ public class E_funnelMaster : Enemy {
 	private GameObject target;
 	protected override void _Update () {
 		if (state == 0) {
-			this.transform.localScale = Vector3.one * 2;
+			//this.transform.localScale = Vector3.one * 2;
 			mp += myDeltaTime;
 			if (mp > 30) {
 				mp -= 30;
@@ -55,6 +56,8 @@ public class E_funnelMaster : Enemy {
 			target = SetTarget (TagUtil.GetHomingActorTag(this.tag));
 			this.transform.DOLocalMove(target.transform.position,2.5f).SetEase(Ease.InElastic).OnComplete(() => {
 				firstAction();
+			}).OnKill(() => {
+				this.transform.localScale = Vector3.one * 2;
 			});
 		}
 	}

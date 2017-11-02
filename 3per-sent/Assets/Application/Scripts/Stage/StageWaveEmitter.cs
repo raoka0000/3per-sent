@@ -20,11 +20,13 @@ public class StageWaveEmitter : MonoBehaviour {
 
 	IEnumerator Emit() {
 		foreach(SwenAndTime item in sat){
-			FunctionIEnumerator func = item.swen.emit ();
-			if(func != null){
-				StartCoroutine (func ());
+			if (item.swen != null) {
+				FunctionIEnumerator func = item.swen.emit ();
+				if (func != null) {
+					StartCoroutine (func ());
+				}
+				yield return new WaitForSeconds (item.delayTime);
 			}
-			yield return new WaitForSeconds (item.delayTime);
 		}
 	}
 

@@ -188,13 +188,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 0
-  _maxHp: 17
+  _maxHp: 13
   bulletUnits: {fileID: 0}
   status: {fileID: 0}
   sprite: {fileID: 0}
   hasSkill: {fileID: 11400000, guid: 9fbcfd40623774633bf40489209da747, type: 2}
   speed: 1
-  shotInterval: 1
+  shotInterval: 1.7
 --- !u!212 &212931504791308062
 SpriteRenderer:
   m_ObjectHideFlags: 1
