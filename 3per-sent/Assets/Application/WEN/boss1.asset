@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99c1ea86b63f485a909df4e152bd49f, type: 3}
   m_Name: boss1
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
+  enemy: {fileID: 1265644654103756, guid: d142839caea3f4fbcb4e5de64bac1848, type: 2}
   pos: {x: 10, y: 0}
