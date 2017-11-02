@@ -74,5 +74,6 @@
 #さんぱーせんと
 さんぱーせんと、これより地球内戦闘に入る！！[p]
 
-@jump file=wide/scene3 scene=new
+;ステージ2へ
+[scene file=""]
 [s]

@@ -78,5 +78,6 @@
 反応なし・・・・・・。[r]
 さんぱーせんと、防衛戦闘に入る！！[p]
 
-@jump file=wide/scene2 scene=new
+;ステージ1へ
+[scene file="sansi"]
 [s]

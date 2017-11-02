@@ -80,5 +80,6 @@
 #さんぱーせんと
 またか！さんぱーせんと、施設内戦闘に入る！！[p]
 
-@jump file=wide/scene4 scene=new
+;ステージ3へ
+[scene file=""]
 [s]

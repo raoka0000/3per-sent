@@ -82,4 +82,7 @@
 [wait time=2.0]
 #さんぱーせんと
 ただいま・・・・・・[p]
+
+[wait time=2]
+@jump file=wide/title scene=new
 [s]

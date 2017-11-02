@@ -537,10 +537,10 @@ Camera:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.07130629
-    y: 0
-    width: 0.8573874
-    height: 1
+    x: 0
+    y: 0.001297921
+    width: 1
+    height: 0.99740416
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -1921,7 +1921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -399.96115, y: -221.51958}
+  m_AnchoredPosition: {x: -399.9974, y: -224.87895}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1969880059
