@@ -8,7 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45e4879aa67d4ce0b2f02f28540ea31, type: 3}
-  m_Name: boss
+  m_Script: {fileID: 11500000, guid: c99c1ea86b63f485a909df4e152bd49f, type: 3}
+  m_Name: testBoss
   m_EditorClassIdentifier: 
-  eap: []
+  enemy: {fileID: 1906044070897702, guid: b33ad51716a4c4f49b93ab01a6ef4313, type: 2}
+  pos: {x: 10, y: 0}

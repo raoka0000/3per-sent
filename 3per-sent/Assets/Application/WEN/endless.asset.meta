@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1eb1658dd0ccc4163b9d308f4b80efd2
+guid: 40d268b65770a44249a62d328d951522
 labels:
 - Data
 - ScriptableObject
-- WEN_positon
-timeCreated: 1509559933
+- WEN_area_random
+timeCreated: 1509592973
 licenseType: Free
 NativeFormatImporter:
   mainObjectFileID: 11400000
