@@ -10,6 +10,7 @@ public class StageWaveEmitter : MonoBehaviour {
 	public class SwenAndTime{
 		public float delayTime;
 		public StageWaveEmitterNode swen;
+		public UnityEvent action;
 	}
 	public SwenAndTime[] sat;
 

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c75df31809f649a8a4ee6bca33b4ca8, type: 3}
+  m_Name: su_gun2
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: a54fa233a8a104737b7cca19146cc054, type: 3}
+  skillType: 0
+  friend: {fileID: 1254692490338308, guid: 6f8f36ba2b2e14ccd9e6e3d6af27fa6e, type: 2}
+  duration: 20

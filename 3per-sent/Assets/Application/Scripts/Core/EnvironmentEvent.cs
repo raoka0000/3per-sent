@@ -35,7 +35,9 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 	public void gameovar(){
 		//ゲームオーバー処理
 		Debug.Log("Game Ovar");
-
+	}
+	public void gameclear(){
+		Debug.Log ("おめです");
 	}
 	//カメラの揺れ
 	public void ShakeCamera(float duration = 0.5f,float strength = 1.0f,int vibrato = 50,bool noise = false){
