@@ -9,6 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a45e4879aa67d4ce0b2f02f28540ea31, type: 3}
-  m_Name: WEN_positon
+  m_Name: heal
   m_EditorClassIdentifier: 
-  eap: []
+  eap:
+  - enemy: {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
+    pos: {x: 10, y: 0}

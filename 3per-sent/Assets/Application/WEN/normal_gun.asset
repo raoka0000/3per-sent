@@ -9,6 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a45e4879aa67d4ce0b2f02f28540ea31, type: 3}
-  m_Name: WEN_positon
+  m_Name: normal_gun
   m_EditorClassIdentifier: 
-  eap: []
+  eap:
+  - enemy: {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
+    pos: {x: 10, y: -3}
+  - enemy: {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
+    pos: {x: 15, y: 0}
+  - enemy: {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
+    pos: {x: 10, y: 3}

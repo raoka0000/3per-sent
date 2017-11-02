@@ -9,6 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a45e4879aa67d4ce0b2f02f28540ea31, type: 3}
-  m_Name: WEN_positon
+  m_Name: bombom
   m_EditorClassIdentifier: 
-  eap: []
+  eap:
+  - enemy: {fileID: 1267932306704802, guid: dfba3461c56bb41998b9d83938443b9a, type: 2}
+    pos: {x: 10, y: 3}
+  - enemy: {fileID: 1900066927990034, guid: b48b5aa4b688f46f6852a1367d5d9df1, type: 2}
+    pos: {x: 10, y: -3}

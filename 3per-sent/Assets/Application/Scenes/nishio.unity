@@ -1454,14 +1454,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sat:
+  - delayTime: 1
+    swen: {fileID: 11400000, guid: 83a882c9b8fdd49168dc3ff98ae77869, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
   - delayTime: 3
-    swen: {fileID: 11400000, guid: 4e4d8787008d44a8585e33d27e4b09eb, type: 2}
+    swen: {fileID: 11400000, guid: 3088fa00f81944b57b28883935803ec8, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
   - delayTime: 3
-    swen: {fileID: 11400000, guid: fd8957a67edd84330a87de9758d5c523, type: 2}
+    swen: {fileID: 11400000, guid: eade20821d84745df840f2cb26de00b9, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
   - delayTime: 3
-    swen: {fileID: 11400000, guid: 4e4d8787008d44a8585e33d27e4b09eb, type: 2}
+    swen: {fileID: 11400000, guid: 3088fa00f81944b57b28883935803ec8, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
   - delayTime: 3
-    swen: {fileID: 11400000, guid: 235692bbdb630413b8f5c5ff9aef99b1, type: 2}
+    swen: {fileID: 11400000, guid: fd93e9c133f0a4492b58c973f4802e5d, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 10
+    swen: {fileID: 11400000, guid: 8c52a04dcd28b4050b890ed17c133f30, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 10
+    swen: {fileID: 11400000, guid: fd93e9c133f0a4492b58c973f4802e5d, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: d08284ee0b1d646d88ee6059bafd50e9, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 15
+    swen: {fileID: 11400000, guid: eade20821d84745df840f2cb26de00b9, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
 --- !u!4 &2025417923
 Transform:
   m_ObjectHideFlags: 0
@@ -1740,7 +1795,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 122450561
+  randomSeed: 107931201
   InitialModule:
     serializedVersion: 3
     enabled: 1

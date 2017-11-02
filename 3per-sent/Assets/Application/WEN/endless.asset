@@ -9,10 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 412d4ef4f491d44649841cacbba7f7b8, type: 3}
-  m_Name: WEN_area_random
+  m_Name: endless
   m_EditorClassIdentifier: 
-  enemys: []
-  leftUpPoint: {x: 0, y: 0}
-  rightDwonPoint: {x: 0, y: 0}
-  prob: 0
-  during: 0
+  enemys:
+  - {fileID: 1576368768741734, guid: 153c261643a0a458ba0f9374d2b4275a, type: 2}
+  leftUpPoint: {x: 10, y: 3}
+  rightDwonPoint: {x: 13, y: -3}
+  prob: 0.07
+  during: 1000
