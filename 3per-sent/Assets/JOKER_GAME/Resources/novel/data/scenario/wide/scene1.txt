@@ -12,10 +12,10 @@
 ;---------------キャラ定義
 
 @tag_default tag="chara"
-[chara_new name ="sanper" storage="sanpercent" jname="さんぱーせんと" scale=2 jcolor=FF77FF]
+[chara_new name ="sanper" storage="facegra" jname="さんぱーせんと" sort=3 scale=0.5 jcolor=FF77FF]
 @reset_tag_default
 
-@chara_pos name="sanper" x=0 y=-0.7
+@chara_pos name="sanper" x=-4 y=1
 
 [playbgm wait=false time=1 storage="music"]
 
@@ -79,5 +79,5 @@
 さんぱーせんと、防衛戦闘に入る！！[p]
 
 ;ステージ1へ
-[scene file="sansi"]
+[scene file="stage1"]
 [s]

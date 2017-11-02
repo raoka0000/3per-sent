@@ -12,7 +12,7 @@
 ;---------------キャラ定義
 
 @tag_default tag="chara"
-[chara_new name ="sanper" storage="sanpercent" jname="さんぱーせんと" scale=2 jcolor=FF77FF]
+[chara_new name ="sanper" storage="facegra" jname="さんぱーせんと" sort=3 scale=2 jcolor=FF77FF]
 @reset_tag_default
 
 @chara_pos name="sanper" x=0 y=-0.7
@@ -81,5 +81,5 @@
 またか！さんぱーせんと、施設内戦闘に入る！！[p]
 
 ;ステージ3へ
-[scene file=""]
+[scene file="stage3"]
 [s]
