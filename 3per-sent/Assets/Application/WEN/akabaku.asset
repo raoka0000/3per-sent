@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45e4879aa67d4ce0b2f02f28540ea31, type: 3}
+  m_Name: akabaku
+  m_EditorClassIdentifier: 
+  eap:
+  - enemy: {fileID: 1900066927990034, guid: b48b5aa4b688f46f6852a1367d5d9df1, type: 2}
+    pos: {x: 10, y: 4}
+  - enemy: {fileID: 1900066927990034, guid: b48b5aa4b688f46f6852a1367d5d9df1, type: 2}
+    pos: {x: 15, y: 0}
+  - enemy: {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
+    pos: {x: 20, y: -3}
+  - enemy: {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
+    pos: {x: 25, y: 4}

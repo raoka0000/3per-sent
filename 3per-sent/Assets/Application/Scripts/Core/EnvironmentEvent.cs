@@ -48,7 +48,13 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 		string s = JokerUtil.GetNextJokerScene (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name);
 		//Debug.Log (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name);
 		if (s != null) {
-			NovelSingleton.StatusManager.callJoker("wide/scene1","");
+				if(s == "wide/scene2"){
+					NovelSingleton.StatusManager.callJoker("wide/scene2","");
+				}else if(s == "wide/scene3"){
+					NovelSingleton.StatusManager.callJoker("wide/scene3","");
+				}else if(s == "wide/scene4"){
+					NovelSingleton.StatusManager.callJoker("wide/scene4","");
+				}
 		}
 	}
 
