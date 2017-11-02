@@ -17,8 +17,10 @@ public class Player : Actor {
 	public float speed = DEFINE.PLAYER_SPEED_DEFULT;
 
 	//初期化時の処理を実装
-	protected override void Init(){
-		
+	protected override void Init(){}
+
+	public override void killed(){
+		EnvironmentEvent.instance.gameovar ();
 	}
 
 	protected override void _Update () {

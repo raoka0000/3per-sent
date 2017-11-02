@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: 0d8b89b85141c48e1b50f185e06204be
-timeCreated: 1508151729
+timeCreated: 1509662450
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - skillImage: {instanceID: 0}
+  - hpText: {instanceID: 0}
+  - green: {instanceID: 0}
+  - red: {instanceID: 0}
+  - gameOverWindow: {fileID: 114126713275631048, guid: d2d150d3c69b54da09bc0a9e4166bb47,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

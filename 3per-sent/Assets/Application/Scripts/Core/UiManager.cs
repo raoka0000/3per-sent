@@ -12,11 +12,17 @@ public class UiManager : SingletonMonoBehaviour<UiManager> {
 	public Image green;
 	public Image red;
 
+	public GameOverWindow gameOverWindow;
+
 	private int pMaxHp = 0;
 
 
 	void Start() {
 		SetHp ();
+	}
+
+	public void ShowGameOverWindow(){
+		gameOverWindow.gameObject.SetActive (true);
 	}
 
 	public void SetSkillImage(SkillObject s){

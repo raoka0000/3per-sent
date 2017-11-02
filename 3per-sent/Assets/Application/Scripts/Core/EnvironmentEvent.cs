@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityStandardAssets.ImageEffects;
+using UnityEngine.SceneManagement;
 using Novel;
 
 namespace PlayScene {
@@ -36,6 +37,15 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 	public void gameovar(){
 		//ゲームオーバー処理
 		Debug.Log("Game Ovar");
+		DOVirtual.DelayedCall (1.0f,()=>{
+			NoiseAndScratches nas = cameraObject.GetComponent<NoiseAndScratches> ();
+			VignetteAndChromaticAberration vaa = cameraObject.GetComponent<VignetteAndChromaticAberration> ();
+			nas.enabled = true;
+			nas.grainIntensityMin = 5;
+			nas.grainIntensityMax = 5;
+			vaa.enabled = true;
+			UiManager.instance.ShowGameOverWindow();
+		});
 	}
 	public void gameclear(){
 		Debug.Log ("おめです");
@@ -43,9 +53,20 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 		//SceneManager.LoadScene ("Player");
 	}
 
+	public void GotoTitle(){
+		//SceneManager.LoadScene(DEFINE.TITLE_SCENE_NAME);
+		AudioManager.instance.kill ();
+		NovelSingleton.StatusManager.callJoker("wide/title","");
+	}
+	public void GotoRetry(){
+		AudioManager.instance.kill ();
+		SceneManager.LoadScene(SceneManager.GetActiveScene ().name);
+	}
+
+
 	public void GotoJoker(){
 		AudioManager.instance.kill ();
-		string s = JokerUtil.GetNextJokerScene (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name);
+		string s = JokerUtil.GetNextJokerScene (SceneManager.GetActiveScene ().name);
 		//Debug.Log (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name);
 		if (s != null) {
 				if(s == "wide/scene2"){

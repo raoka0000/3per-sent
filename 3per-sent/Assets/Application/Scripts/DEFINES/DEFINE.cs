@@ -14,6 +14,8 @@ public class DEFINE{
 
 	public const string SHOT_SE = "shot";
 
+	public const string TITLE_SCENE_NAME = "Player";
+
 	public static readonly Color COLOR_MUTEKI_MODE = Color.yellow;
 	public static readonly Color COLOR_SCAN_MODE   = Color.red;
 	public static readonly Color COLOR_DEFULT_MODE = Color.white;

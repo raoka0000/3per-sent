@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Application/Scenes/test1.unity
-    guid: 83f16bd4fb6204d1ea5a50b1ace7cafa
+    path: Assets/JOKER_GAME/Scenes/Player.unity
+    guid: 9eb77fda2d132499da094ea11aa23f55
   - enabled: 1
     path: Assets/Application/Scenes/title.unity
     guid: cbd7cc0faea564084a29315394269840
@@ -15,5 +15,5 @@ EditorBuildSettings:
     path: Assets/Application/Scenes/sansi.unity
     guid: 8b9a8fc17ed304e149108e4e2cea91d5
   - enabled: 1
-    path: Assets/JOKER_GAME/Scenes/Player.unity
-    guid: 9eb77fda2d132499da094ea11aa23f55
+    path: Assets/Application/Scenes/test1.unity
+    guid: 83f16bd4fb6204d1ea5a50b1ace7cafa
