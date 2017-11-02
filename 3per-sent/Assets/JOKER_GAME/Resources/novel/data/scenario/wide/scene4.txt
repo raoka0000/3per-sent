@@ -2,6 +2,8 @@
 [bg_new name="background" storage="back_end"]
 [bg_show name="background"]
 
+[playbgm wait=false time=1 storage="stage3"]
+
 ;メッセージ表示
 [showmessage]
 [call file=wide/system target="*system_setting_buttons"]
@@ -12,12 +14,10 @@
 ;---------------キャラ定義
 
 @tag_default tag="chara"
-[chara_new name ="sanper" storage="facegra" jname="さんぱーせんと" sort=3 scale=2 jcolor=FF77FF]
+[chara_new name ="sanper" storage="facegra" jname="さんぱーせんと" sort=3 scale=0.5 jcolor=FF77FF]
 @reset_tag_default
 
-@chara_pos name="sanper" x=0 y=-0.7
-
-[playbgm wait=false time=1 storage="music"]
+@chara_pos name="sanper" x=-4 y=1
 
 開発された生命体はDNAの適合が不安定であった。[p]
 
@@ -47,6 +47,9 @@
 この最深部で生み出され、宇宙に旅立つまでの時間全てを[r]
 ここで過ごしたさんぱーせんとは理解した。[p]
 
+[stopbgm]
+[playbgm wait=false time=1 storage="last"]
+
 [delay speed=0.08]
 #さんぱーせんと
 微かに漂うナノマシン、そうか・・・・・・。[r]
@@ -56,8 +59,12 @@
 博士も研究員もすべて、機械生命体に・・・・・・。[p]
 
 #さんぱーせんと
+もうこの地球に生命体は僕しかいない。[r]
+人のために開発された僕が、最後の生命体・・・・・・。[p]
+
+#さんぱーせんと
 僕はこれから何を目的に活動すれれば・・・・・・。[r]
-こんなパターンのプログラム、用意しといて欲しかったな。[p]
+こんな場合のプログラム、用意しといて欲しかったよ。[p]
 
 [playse storage="water"]
 
@@ -65,14 +72,15 @@
 
 [delay speed=0.1]
 #さんぱーせんと
-涙を流すプログラムなんて・・・・・・[r]
-こんな・・・・・・僕は望んでないよ・・・・・・。[p]
+あ・・・れ・・・・・・？[r]
+涙を流すプログラムなんて・・・[r]
+そんな・・・僕は望んでないよ・・・・・・。[p]
 
 [playse storage="warning"]
 
 #さんぱーせんと
-もう燃料も限界だ。[r]
-博士、どの生命体だったかわからないけど[p]
+・・・・・・もう燃料も限界だ。[r]
+博士、今となってはどの生命体だったかわからないけど[p]
 
 [delay speed=0.001]
 #さんぱーせんと
@@ -81,7 +89,7 @@
 
 [wait time=2.0]
 #さんぱーせんと
-ただいま・・・・・・[p]
+みんな・・・・・・ただいま。[p]
 
 [wait time=2]
 @jump file=wide/title scene=new

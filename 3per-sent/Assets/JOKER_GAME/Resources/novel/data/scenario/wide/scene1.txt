@@ -17,7 +17,7 @@
 
 @chara_pos name="sanper" x=-4 y=1
 
-[playbgm wait=false time=1 storage="music"]
+[playbgm wait=false time=1 storage="first"]
 
 茜疾世紀11346年。[r]
 地球は異常な環境変化によって人は新たな進化を求められていた。[p]

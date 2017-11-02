@@ -2,6 +2,8 @@
 [bg_new name="background" storage="back_labo"]
 [bg_show name="background"]
 
+[playbgm wait=false time=1 storage="stage3"]
+
 ;メッセージ表示
 [showmessage]
 [call file=wide/system target="*system_setting_buttons"]
@@ -12,12 +14,10 @@
 ;---------------キャラ定義
 
 @tag_default tag="chara"
-[chara_new name ="sanper" storage="facegra" jname="さんぱーせんと" sort=3 scale=2 jcolor=FF77FF]
+[chara_new name ="sanper" storage="facegra" jname="さんぱーせんと" sort=3 scale=0.5 jcolor=FF77FF]
 @reset_tag_default
 
-@chara_pos name="sanper" x=0 y=-0.7
-
-[playbgm wait=false time=1 storage="music"]
+@chara_pos name="sanper" x=-4 y=1
 
 人はより効率的に探査を進める方法を求めた。[r]
 次なる探査生命体の開発は人の希望でもあった。[p]
