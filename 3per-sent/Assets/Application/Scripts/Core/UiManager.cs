@@ -13,16 +13,20 @@ public class UiManager : SingletonMonoBehaviour<UiManager> {
 	public Image red;
 
 	public GameOverWindow gameOverWindow;
+	private GameOverWindow _gameOverWindow;
 
 	private int pMaxHp = 0;
 
 
 	void Start() {
 		SetHp ();
+		GameObject obj = GameObject.Instantiate (gameOverWindow.gameObject, this.transform.position, this.transform.rotation);
+		obj.transform.parent = this.transform;
+		_gameOverWindow = obj.GetComponent<GameOverWindow>();
 	}
 
 	public void ShowGameOverWindow(){
-		gameOverWindow.gameObject.SetActive (true);
+		_gameOverWindow.gameObject.SetActive (true);
 	}
 
 	public void SetSkillImage(SkillObject s){

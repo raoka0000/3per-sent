@@ -272,6 +272,8 @@ MonoBehaviour:
   hpText: {fileID: 1962596549}
   green: {fileID: 528876269}
   red: {fileID: 1147069145}
+  gameOverWindow: {fileID: 114126713275631048, guid: d2d150d3c69b54da09bc0a9e4166bb47,
+    type: 2}
 --- !u!1 &240742758
 GameObject:
   m_ObjectHideFlags: 0
