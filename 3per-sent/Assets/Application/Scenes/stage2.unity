@@ -1462,14 +1462,7 @@ MonoBehaviour:
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
   - delayTime: 3
-    swen: {fileID: 11400000, guid: 3088fa00f81944b57b28883935803ec8, type: 2}
-    action:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-  - delayTime: 3
-    swen: {fileID: 11400000, guid: eade20821d84745df840f2cb26de00b9, type: 2}
+    swen: {fileID: 11400000, guid: 58edef49e3d2e4e8995b48375c100e5f, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
@@ -1477,48 +1470,6 @@ MonoBehaviour:
         PublicKeyToken=null
   - delayTime: 3
     swen: {fileID: 11400000, guid: 3088fa00f81944b57b28883935803ec8, type: 2}
-    action:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-  - delayTime: 3
-    swen: {fileID: 11400000, guid: fd93e9c133f0a4492b58c973f4802e5d, type: 2}
-    action:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-  - delayTime: 5
-    swen: {fileID: 11400000, guid: 235692bbdb630413b8f5c5ff9aef99b1, type: 2}
-    action:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-  - delayTime: 4
-    swen: {fileID: 11400000, guid: fd93e9c133f0a4492b58c973f4802e5d, type: 2}
-    action:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-  - delayTime: 3
-    swen: {fileID: 11400000, guid: d08284ee0b1d646d88ee6059bafd50e9, type: 2}
-    action:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-  - delayTime: 3
-    swen: {fileID: 11400000, guid: 458731523a3e24bb0bb8ee49c0cbcf2a, type: 2}
-    action:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-  - delayTime: 3
-    swen: {fileID: 11400000, guid: 076a3bc62e4174e8dbacdd40937a7e16, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
