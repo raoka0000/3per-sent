@@ -1,0 +1,85 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="back_end"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+;---------------キャラ定義
+
+@tag_default tag="chara"
+[chara_new name ="sanper" storage="sanpercent" jname="さんぱーせんと" scale=2 jcolor=FF77FF]
+@reset_tag_default
+
+@chara_pos name="sanper" x=0 y=-0.7
+
+[playbgm wait=false time=1 storage="music"]
+
+開発された生命体はDNAの適合が不安定であった。[p]
+
+しかしヒトビトの期待、種族の危機感もあり[r]
+生命体は多く開発された。[p]
+
+また年々増え続けるヒトに、生存可能な地域は狭まる一方であり[r]
+それがさらに博士の開発を加速化した。[p]
+
+そして崩壊は一瞬であった。[p]
+
+不安定な生命体のナノマシンは暴走し[r]
+すべてのヒトを探査生命体に改変してしまった。[p]
+
+暴走した生命体の使命は[p]
+
+地球を防衛し、種を繁栄させることであった。[p]
+
+;キャラの表示
+[show name=sanper]
+
+#さんぱーせんと
+ついに最深部まできたけど・・・・・・。[r]
+人はいないようだな。[p]
+
+#   
+この最深部で生み出され、宇宙に旅立つまでの時間全てを[r]
+ここで過ごしたさんぱーせんとは理解した。[p]
+
+[delay speed=0.08]
+#さんぱーせんと
+微かに漂うナノマシン、そうか・・・・・・。[r]
+あの生命体こそがヒトだったのか。[p]
+
+#さんぱーせんと
+博士も研究員もすべて、機械生命体に・・・・・・。[p]
+
+#さんぱーせんと
+僕はこれから何を目的に活動すれれば・・・・・・。[r]
+こんなパターンのプログラム、用意しといて欲しかったな。[p]
+
+[playse storage="water"]
+
+[wait time=2.0]
+
+[delay speed=0.1]
+#さんぱーせんと
+涙を流すプログラムなんて・・・・・・[r]
+こんな・・・・・・僕は望んでないよ・・・・・・。[p]
+
+[playse storage="warning"]
+
+#さんぱーせんと
+もう燃料も限界だ。[r]
+博士、どの生命体だったかわからないけど[p]
+
+[delay speed=0.001]
+#さんぱーせんと
+僕はここで・・・・・・[r]
+次の指示を待つことにするよ。[p]
+
+[wait time=2.0]
+#さんぱーせんと
+ただいま・・・・・・[p]
+[s]

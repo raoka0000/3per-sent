@@ -1,0 +1,84 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="back_labo"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+;---------------キャラ定義
+
+@tag_default tag="chara"
+[chara_new name ="sanper" storage="sanpercent" jname="さんぱーせんと" scale=2 jcolor=FF77FF]
+@reset_tag_default
+
+@chara_pos name="sanper" x=0 y=-0.7
+
+[playbgm wait=false time=1 storage="music"]
+
+人はより効率的に探査を進める方法を求めた。[r]
+次なる探査生命体の開発は人の希望でもあった。[p]
+
+さんぱーせんとの生みの親、平尾博士がナノマシンを改良し[r]
+新たな地球外探査生命体を生み出すことに成功した。[p]
+
+しかし荒れ果てた地球上にナノマシンを定着させれる生命体は[r]
+ほぼゼロに等しかった。[p]
+
+[wait time=2.0]
+[delay speed=0.1]
+ヒトを除いて[p]
+
+[wait time=1.0]
+
+次世代の探査生命体は、ヒトをベースに開発が進められた。[p]
+
+;キャラの表示
+[show name=sanper]
+
+#さんぱーせんと
+地球のいたるところにあの生命体が存在している。[r]
+まさかこの中央管理施設にまでもとは・・・・・・。[p]
+
+#さんぱーせんと
+生命体反応が多すぎて人が検知できない。[r]
+しかしここにまで人がいないとなると・・・・・・[p]
+
+[select_new text="もう人はいない？" target=*select_c1 ]
+[select_new text="別の施設に移動した？" target=*select_c2 ]
+
+[select_show sound=click ]
+
+[s]
+
+*select_c1
+#さんぱーせんと
+いや、それは最悪のケースだ。[r]
+希望は捨てないのが博士教えだ。[p]
+
+#さんぱーせんと
+でも、人がいないのならば僕の存在意義はあるのだろうか。[p]
+
+@jump target=*c_common
+
+*select_c2
+#さんぱーせんと
+そこから連絡がないのもおかしい・・・・・・。[r]
+人がもう絶滅していることも計算に入れるべきか。[p]
+
+#さんぱーせんと
+もし人がいないのなら、僕の使命はなんなんだ？[p]
+
+@jump target=*c_common
+
+*c_common
+
+[playse storage="buzzer" wait=true time =1.0]
+#さんぱーせんと
+またか！さんぱーせんと、施設内戦闘に入る！！[p]
+
+@jump file=wide/scene4 scene=new
+[s]

@@ -6872,11 +6872,12 @@ public class iTween : MonoBehaviour{
 				try {
 					easeType=(EaseType)Enum.Parse(typeof(EaseType),(string)tweenArguments["easetype"],true); 
 				} catch {
-					Debug.LogWarning("iTween: Unsupported easeType supplied! Default will be used.");
+                    //Debug.LogWarning("iTween: Unsupported easeType supplied! Default will be used.");
 					easeType=Defaults.easeType;
 				}
 			}
 		}else{
+            Debug.Log(easeType);
 			easeType=Defaults.easeType;
 		}
 				
