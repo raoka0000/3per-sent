@@ -15,6 +15,8 @@ public class E_bomber : Enemy {
 	private float speed = 1;
 	[SerializeField]
 	private float explosionInterval = 3f;
+	[SerializeField]
+	private float explosionRange = 3f;
 
 
 	private int stete = 0;
@@ -41,7 +43,7 @@ public class E_bomber : Enemy {
 				tmp.y = Mathf.Sin (angle * Mathf.Deg2Rad);
 				tmpvec = transform.position + (tmp * speed * myDeltaTime);
 				transform.position = tmpvec;
-				if (Vector3.Distance (transform.position, target.transform.position) < 3.0f) {
+				if (Vector3.Distance (transform.position, target.transform.position) < explosionRange) {
 					stete = 1;
 				}
 			}

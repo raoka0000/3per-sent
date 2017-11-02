@@ -9,12 +9,12 @@ public class E_gun : Enemy {
 	private float shotInterval = 5;
 
 	[SerializeField]
-	private float length = -20;
+	private float speed = -2;
 
 
 	protected override void Init(){
 		if(bulletUnits != null)bulletUnits.Shot ();
-		this.transform.DOLocalMoveX(length,10f).SetRelative().timeScale = timeScale;
+		this.transform.DOLocalMoveX(speed,1f).SetRelative().SetLoops (-1, LoopType.Incremental).timeScale = timeScale;
 		this.transform.DOLocalMoveY(0.15f,1.5f).SetRelative().SetLoops (-1, LoopType.Yoyo).timeScale = timeScale;
 	}
 	public override void killed(){

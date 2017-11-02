@@ -69,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1675234928386894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.05, y: -0.84, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4731750199109130}
@@ -122,13 +122,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 0
-  _maxHp: 30
+  _maxHp: 12
   bulletUnits: {fileID: 0}
   status: {fileID: 0}
   sprite: {fileID: 0}
   hasSkill: {fileID: 11400000, guid: 545b83ada4f284a9bbaa06bb14adf6dd, type: 2}
   speed: 10
-  explosionInterval: 3
+  explosionInterval: 1
+  explosionRange: 1
 --- !u!114 &114500720711757824
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -127,7 +127,7 @@ MonoBehaviour:
   status: {fileID: 0}
   sprite: {fileID: 0}
   hasSkill: {fileID: 11400000, guid: e2313d7705ef84905ad26faf31b8a606, type: 2}
-  speed: 3
+  speed: 6
   shotInterval: 3
 --- !u!114 &114403271369682018
 MonoBehaviour:

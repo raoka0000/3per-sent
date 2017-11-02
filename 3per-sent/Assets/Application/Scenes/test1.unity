@@ -856,7 +856,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1906044070897702, guid: b33ad51716a4c4f49b93ab01a6ef4313, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b33ad51716a4c4f49b93ab01a6ef4313, type: 2}
@@ -1315,12 +1315,12 @@ MonoBehaviour:
   sprite: {fileID: 0}
   hasSkill: {fileID: 0}
   funnnel:
-  - {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
-  - {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
-  - {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
-  - {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
   - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
-  - {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
+  - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
+  - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
+  - {fileID: 1537713900370364, guid: 4ac7c63385bb449a081079f0cb11a408, type: 2}
+  - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
+  - {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
   - {fileID: 1537713900370364, guid: 4ac7c63385bb449a081079f0cb11a408, type: 2}
   - {fileID: 1537713900370364, guid: 4ac7c63385bb449a081079f0cb11a408, type: 2}
 --- !u!58 &1373187285
@@ -1827,6 +1827,10 @@ MonoBehaviour:
     swen: {fileID: 11400000, guid: 235692bbdb630413b8f5c5ff9aef99b1, type: 2}
   - delayTime: 3
     swen: {fileID: 11400000, guid: 076a3bc62e4174e8dbacdd40937a7e16, type: 2}
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 076a3bc62e4174e8dbacdd40937a7e16, type: 2}
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 83a882c9b8fdd49168dc3ff98ae77869, type: 2}
 --- !u!4 &2025417923
 Transform:
   m_ObjectHideFlags: 0
@@ -5132,7 +5136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1537713900370364, guid: 4ac7c63385bb449a081079f0cb11a408, type: 2}
   enemy2: {fileID: 1576368768741734, guid: 153c261643a0a458ba0f9374d2b4275a, type: 2}
-  enemy3: {fileID: 1900066927990034, guid: b48b5aa4b688f46f6852a1367d5d9df1, type: 2}
+  enemy3: {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
   enemy4: {fileID: 1265644654103756, guid: d142839caea3f4fbcb4e5de64bac1848, type: 2}
 --- !u!4 &2143424933
 Transform:

@@ -128,7 +128,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   hasSkill: {fileID: 0}
   shotInterval: 1
-  length: 2
+  speed: 2
 --- !u!114 &114605041588673894
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attack: 5
   startScale: 0.1
-  endScale: 0.5
+  endScale: 0.8
   time: 0.8
 --- !u!212 &212746787721662396
 SpriteRenderer:
