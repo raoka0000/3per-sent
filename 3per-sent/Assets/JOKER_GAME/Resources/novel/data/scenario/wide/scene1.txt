@@ -1,0 +1,82 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="back_star"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+;---------------キャラ定義
+
+@tag_default tag="chara"
+[chara_new name ="sanper" storage="sanpercent" jname="さんぱーせんと" scale=2 jcolor=FF77FF]
+@reset_tag_default
+
+@chara_pos name="sanper" x=0 y=-0.7
+
+[playbgm wait=false time=1 storage="music"]
+
+茜疾世紀11346年。[r]
+地球は異常な環境変化によって人は新たな進化を求められていた。[p]
+
+人は地球外探査生命体、通称さんぱーせんとを開発。[r]
+人類の未来を新たな惑星発見へ託した。[p]
+
+;キャラの表示
+[show name=sanper]
+
+#さんぱーせんと
+定期通信。こちらさんぱーせんと。[r]
+中央管理所、応答してください。[p]
+
+#さんぱーせんと
+・・・・・・？[p]
+
+#さんぱーせんと
+こちらさんぱーせんと。応答してください。[p]
+
+#さんぱーせんと
+地球からの応答がない・・・・・・。[p]
+
+[select_new text="とりあえず帰投" target=*select_a1 ]
+[select_new text="連絡があるまで待機" target=*select_a2 ]
+
+[select_show sound=click ]
+
+[s]
+
+*select_a1
+#さんぱーせんと
+地球圏まで帰還しているため、これより計画通り帰投します。[p]
+@jump target=*a_common
+
+*select_a2
+#さんぱーせんと
+・・・・・・。[r]
+これ以上は燃料に限界があるため、これより計画通り帰投します。[p]
+@jump target=*a_common
+
+*a_common
+
+[playse storage="buzzer" wait=true time =1.0]
+#さんぱーせんと
+生体反応！？[r]
+識別信号・・・・・・エラー？[p]
+
+#さんぱーせんと
+こちら地球外探査生命体さんぱーせんと。[r]
+敵対の意思はない。通信応答願う。[p]
+
+#さんぱーせんと
+10秒後に防衛行動に出る。[r]
+応答願う。こちら地球外探査生命体さんぱーせんと。[p]
+
+#さんぱーせんと
+反応なし・・・・・・。[r]
+さんぱーせんと、防衛戦闘に入る！！[p]
+
+@jump file=wide/scene2 scene=new
+[s]

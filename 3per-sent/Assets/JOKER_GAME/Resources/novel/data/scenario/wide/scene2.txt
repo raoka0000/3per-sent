@@ -1,0 +1,78 @@
+@call file=wide/libs/utils
+[bg_new name="background" storage="back_chikyu"]
+[bg_show name="background"]
+
+;メッセージ表示
+[showmessage]
+[call file=wide/system target="*system_setting_buttons"]
+[text_new name=_sp_chara_name layer=ui x="-168" y=-108.5 val="" color="DDFF00" fontsize=16 anchor="MiddleLeft"]
+[text_show name="_sp_chara_name"] 
+
+
+;---------------キャラ定義
+
+@tag_default tag="chara"
+[chara_new name ="sanper" storage="sanpercent" jname="さんぱーせんと" scale=2 jcolor=FF77FF]
+@reset_tag_default
+
+@chara_pos name="sanper" x=0 y=-0.7
+
+[playbgm wait=false time=1 storage="music"]
+
+太陽系第3惑星地球。[p]
+
+度重なる土地開発や地殻変動によって環境は変化し、[r]
+生物が住み着くには困難な土地になってしまった。[p]
+
+それに伴い人はシェルターの中で生活することを余儀なくされ、[r]
+さらなる繁栄のため宇宙の調査を積極的に行った。[p]
+
+平尾博士は宇宙に適応する新たなナノマシンを開発し、[r]
+もっとも適合するDNAを持つカンガルーとナノマシンの融合を試みた。[p]
+
+その結果生まれたのがさんぱーせんとである。[p]
+
+;キャラの表示
+[show name=sanper]
+
+#さんぱーせんと
+僕が出発してから、地球に大きな変化は見られない。[r]
+新たな防衛生命体を開発したのか・・・・・・？[p]
+
+#さんぱーせんと
+しかし僕が迎撃されるのはおかしい。[r]
+そもそも・・・・・・[p]
+
+[select_new text="あれは生命体なのか？" target=*select_b1 ]
+[select_new text="中央管理所は無事なのか？" target=*select_b2 ]
+
+[select_show sound=click ]
+
+[s]
+
+*select_b1
+#さんぱーせんと
+操縦者がいるのなら応答はあるはず・・・・・・。[r]
+僕と同じ機械生命体なのか？[p]
+
+@jump target=*b_common
+
+*select_b2
+#さんぱーせんと
+依然応答はなし・・・・・・。[r]
+平尾博士、研究室は無事なのだろうか。[p]
+
+@jump target=*b_common
+
+*b_common
+
+[playse storage="buzzer" wait=true time =1.0]
+#さんぱーせんと
+再び生体反応！[r]
+地球内にまで存在しているのか！！[p]
+
+#さんぱーせんと
+さんぱーせんと、これより地球内戦闘に入る！！[p]
+
+@jump file=wide/scene3 scene=new
+[s]

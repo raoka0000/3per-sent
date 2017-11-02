@@ -31,6 +31,12 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
 	//全AudioClipを保持
 	private Dictionary<string, AudioClip> _bgmDic, _seDic;
 
+	public void kill(){
+		StopBGM ();
+		//Destroy (instance);
+		//_instance = null;
+	}
+
 	//=================================================================================
 	//初期化
 	//=================================================================================

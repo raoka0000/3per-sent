@@ -3,7 +3,7 @@ using UnityEngine;
 
 //シングルトン継承元クラス.
 public class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour{
-	private static T _instance;
+	protected static T _instance;
 	public static T instance {
 		get {
 			if (_instance == null) {

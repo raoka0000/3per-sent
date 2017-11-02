@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityStandardAssets.ImageEffects;
+using Novel;
 
 namespace PlayScene {
 
@@ -38,7 +39,19 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 	}
 	public void gameclear(){
 		Debug.Log ("おめです");
+		GotoJoker ();
+		//SceneManager.LoadScene ("Player");
 	}
+
+	public void GotoJoker(){
+		AudioManager.instance.kill ();
+		string s = JokerUtil.GetNextJokerScene (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name);
+		//Debug.Log (UnityEngine.SceneManagement.SceneManager.GetActiveScene ().name);
+		if (s != null) {
+			NovelSingleton.StatusManager.callJoker("wide/scene1","");
+		}
+	}
+
 	//カメラの揺れ
 	public void ShakeCamera(float duration = 0.5f,float strength = 1.0f,int vibrato = 50,bool noise = false){
 		if (noise) {
