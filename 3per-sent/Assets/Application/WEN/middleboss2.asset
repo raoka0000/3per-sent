@@ -9,8 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a45e4879aa67d4ce0b2f02f28540ea31, type: 3}
-  m_Name: zako2
+  m_Name: middleboss2
   m_EditorClassIdentifier: 
   eap:
-  - enemy: {fileID: 1484726231687984, guid: 7a3ada6c479b1419bba559299dfa0e71, type: 2}
+  - enemy: {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
+    pos: {x: 20, y: 3}
+  - enemy: {fileID: 1706402597983986, guid: 571d03abf92804ae499b6caf1a59e825, type: 2}
+    pos: {x: 30, y: 0}
+  - enemy: {fileID: 1906044070897702, guid: b33ad51716a4c4f49b93ab01a6ef4313, type: 2}
     pos: {x: 10, y: 0}

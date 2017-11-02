@@ -8,9 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45e4879aa67d4ce0b2f02f28540ea31, type: 3}
-  m_Name: zako2
+  m_Script: {fileID: 11500000, guid: c99c1ea86b63f485a909df4e152bd49f, type: 3}
+  m_Name: lastboss
   m_EditorClassIdentifier: 
-  eap:
-  - enemy: {fileID: 1484726231687984, guid: 7a3ada6c479b1419bba559299dfa0e71, type: 2}
-    pos: {x: 10, y: 0}
+  enemy: {fileID: 1464130701075492, guid: 587cd474c5a1242f4b0c7cf432b33797, type: 2}
+  pos: {x: 10, y: 0}
