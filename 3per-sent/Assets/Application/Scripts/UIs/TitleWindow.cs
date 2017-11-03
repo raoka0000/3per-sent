@@ -36,10 +36,11 @@ public class TitleWindow : MonoBehaviour {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)){
+			AudioManager.instance.PlaySE ("decision3");
 			if (cursor == 0) {
 				GoGame ();
 			} else if (cursor == 1) {
-				//GoManual ();
+				GoManual ();
 			} else if (cursor == 2) {
 				GoStory ();
 			}
@@ -52,7 +53,7 @@ public class TitleWindow : MonoBehaviour {
 		SceneManager.LoadScene(DEFINE.STAGE1_SCENE_NAME);
 	}
 	void GoManual(){
-		NovelSingleton.StatusManager.callJoker("wide/libs/explain","");
+		SceneManager.LoadScene(DEFINE.MANUAL_SCENE_NAME);
 	}
 	void GoStory(){
 		AudioManager.instance.StopBGM ();
