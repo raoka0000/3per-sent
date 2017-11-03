@@ -39,7 +39,7 @@ public class TitleWindow : MonoBehaviour {
 			if (cursor == 0) {
 				GoGame ();
 			} else if (cursor == 1) {
-				GoManual ();
+				//GoManual ();
 			} else if (cursor == 2) {
 				GoStory ();
 			}
@@ -55,6 +55,7 @@ public class TitleWindow : MonoBehaviour {
 		NovelSingleton.StatusManager.callJoker("wide/libs/explain","");
 	}
 	void GoStory(){
+		AudioManager.instance.StopBGM ();
 		DEFINE.isStoryMode = true;
 		NovelSingleton.StatusManager.callJoker("wide/scene1","");
 	}

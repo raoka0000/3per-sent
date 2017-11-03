@@ -92,5 +92,5 @@
 みんな・・・・・・ただいま。[p]
 
 [wait time=2]
-@jump file=wide/title scene=new
+[scene file="title"]
 [s]
