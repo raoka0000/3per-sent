@@ -33,9 +33,31 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 		}
 	}
 
+	public Vector2 _leftDwon;
+	public Vector2 leftDwon{
+		get{ 
+			if(_leftDwon == null){
+				_leftDwon = Camera.main.ViewportToWorldPoint(Vector2.zero);
+				Debug.Log (_leftDwon);
+			}
+			return _leftDwon;
+		}
+	}
+	public Vector2 _rightTop;
+	public Vector2 rightTop{
+		get{ 
+			if(_rightTop == null){
+				_rightTop = Camera.main.ViewportToWorldPoint(Vector2.one);
+			}
+			return _rightTop;
+		}
+	}
+
+
 
 	public void gameovar(){
 		//ゲームオーバー処理
+		Time.timeScale = 1f;
 		Debug.Log("Game Ovar");
 		DOVirtual.DelayedCall (1.0f,()=>{
 			NoiseAndScratches nas = cameraObject.GetComponent<NoiseAndScratches> ();

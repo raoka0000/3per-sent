@@ -122,13 +122,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 0
-  _maxHp: 7
+  _maxHp: 17
   bulletUnits: {fileID: 0}
   status: {fileID: 0}
   sprite: {fileID: 0}
   hasSkill: {fileID: 0}
   shotInterval: 1
-  speed: 2
+  speed: 0.5
 --- !u!114 &114605041588673894
 MonoBehaviour:
   m_ObjectHideFlags: 1

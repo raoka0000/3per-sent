@@ -22,7 +22,7 @@ public class TitleWindow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		cursor = 0;
+		cursor = 300000;//根本的な解決じゃない.
 		AudioManager.instance.PlayBGM (DEFINE.STEGE1_BGM);
 	}
 	

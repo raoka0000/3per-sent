@@ -106,6 +106,23 @@ public class Player : Actor {
 		Vector2 pos = transform.position;
 		pos += direction  * speed * myDeltaTime;
 		transform.position = pos;
+
+		// 画面左下のワールド座標をビューポートから取得
+		Vector2 min = new Vector2(-9,-4);
+
+		// 画面右上のワールド座標をビューポートから取得
+		Vector2 max = new Vector2(9,6);
+
+		// プレイヤーの座標を取得
+		Vector2 pos2 = transform.position;
+
+		// プレイヤーの位置が画面内に収まるように制限をかける
+		pos2.x = Mathf.Clamp (pos.x, min.x, max.x);
+		pos2.y = Mathf.Clamp (pos.y, min.y, max.y);
+
+		// 制限をかけた値をプレイヤーの位置とする
+		transform.position = pos2;
+
 	}
 
 	/*ScanModeに関すること*/
