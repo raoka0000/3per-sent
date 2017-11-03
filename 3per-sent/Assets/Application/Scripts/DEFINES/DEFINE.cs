@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 
 public class DEFINE{
+	public static bool isStoryMode = false;
+
+	public const string TITLE_SCENE_NAME = "title";
+	public const string STAGE1_SCENE_NAME = "stage1";
+	public const string STAGE2_SCENE_NAME = "stage2";
+	public const string STAGE3_SCENE_NAME = "stage3";
+
+
 	public const float PLAYER_SPEED_DEFULT = 8.0f;
 	public const float PLAYER_LOW_SPEED_DEFULT = 4.0f;
 
@@ -14,7 +22,6 @@ public class DEFINE{
 
 	public const string SHOT_SE = "shot";
 
-	public const string TITLE_SCENE_NAME = "Player";
 
 	public static readonly Color COLOR_MUTEKI_MODE = Color.yellow;
 	public static readonly Color COLOR_SCAN_MODE   = Color.red;

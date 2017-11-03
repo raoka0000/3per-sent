@@ -49,14 +49,24 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 	}
 	public void gameclear(){
 		Debug.Log ("おめです");
-		GotoJoker ();
-		//SceneManager.LoadScene ("Player");
+		if (DEFINE.isStoryMode) {
+			GotoJoker ();
+		} else {
+			string s = SceneManager.GetActiveScene ().name;
+			if (s == DEFINE.STAGE1_SCENE_NAME) {
+				SceneManager.LoadScene(DEFINE.STAGE2_SCENE_NAME);
+			}else if(s == DEFINE.STAGE2_SCENE_NAME){
+				SceneManager.LoadScene(DEFINE.STAGE3_SCENE_NAME);
+			}else if(s == DEFINE.STAGE3_SCENE_NAME){
+				SceneManager.LoadScene(DEFINE.TITLE_SCENE_NAME);
+			}
+		}
 	}
 
 	public void GotoTitle(){
-		//SceneManager.LoadScene(DEFINE.TITLE_SCENE_NAME);
-		AudioManager.instance.kill ();
-		NovelSingleton.StatusManager.callJoker("wide/title","");
+		AudioManager.instance.PlayBGM (DEFINE.STEGE1_BGM);
+		SceneManager.LoadScene(DEFINE.TITLE_SCENE_NAME);
+		//NovelSingleton.StatusManager.callJoker("wide/title","");
 	}
 	public void GotoRetry(){
 		AudioManager.instance.kill ();

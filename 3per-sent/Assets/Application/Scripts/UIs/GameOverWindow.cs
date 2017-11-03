@@ -37,7 +37,7 @@ public class GameOverWindow : MonoBehaviour {
 			Debug.Log ("左");
 			cursor = 1;
 		}
-		if(Input.GetKeyDown(KeyCode.Z)){
+		if(Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)){
 			if (cursor == 0) {
 				EnvironmentEvent.instance.GotoRetry ();
 			} else {

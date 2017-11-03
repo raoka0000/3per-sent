@@ -17,3 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Application/Scenes/test1.unity
     guid: 83f16bd4fb6204d1ea5a50b1ace7cafa
+  - enabled: 1
+    path: Assets/Application/Scenes/stage1.unity
+    guid: 12f4c41c5a4ab45d2a3464f4d054d148
+  - enabled: 1
+    path: Assets/Application/Scenes/stage2.unity
+    guid: 00a22bf58bc424b329d951f180ac42bd
+  - enabled: 1
+    path: Assets/Application/Scenes/stage3.unity
+    guid: 00000000000000000000000000000000
