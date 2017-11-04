@@ -33,29 +33,33 @@ public class E_funnelMaster : Enemy {
 			//this.transform.localScale = Vector3.one * 2;
 			mp += myDeltaTime;
 			if (mp > 30) {
-				mp -= 30;
 				state = Random.Range (1, 4);
 			}
 		} else if (state == 1) {
-			state = 0; 
+			mp -= 25;
+			state = -1; 
 			this.bulletUnits.Stop();
 			this.transform.DOKill ();
 			this.transform.DOPunchScale (new Vector3 (1.5f, 2.5f, 0), 0.5f, 2).OnComplete (() => {
 				summon (Random.Range (1, 10));
 				this.transform.DOKill ();
+				state = 0;
 				firstAction ();
 			});
 		} else if (state == 2) {
+			mp -= 15;
 			state = 0; 
 			this.bulletUnits.Stop();
 			bulletUnits.Shot (1);
 			DOVirtual.DelayedCall (12f, () => bulletUnits.Shot (0));
 		} else if (state == 3) {
-			state = 0;
+			mp -= 25;
+			state = -1;
 			this.transform.DOKill ();
 			target = SetTarget (TagUtil.GetHomingActorTag(this.tag));
 			this.transform.DOLocalMove(target.transform.position,2.5f).SetEase(Ease.InElastic).OnComplete(() => {
 				firstAction();
+				state = 0;
 			}).OnKill(() => {
 				this.transform.localScale = Vector3.one * 2;
 			});

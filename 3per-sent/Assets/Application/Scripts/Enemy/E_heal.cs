@@ -26,7 +26,7 @@ public class E_heal : Enemy {
 	private float time = 0;
 	private Vector3 tmpvec = Vector3.one;
 	protected override void _Update () {
-		if (target == null) {
+		if (target == null || !target.activeSelf) {
 			target = SetTarget (TagUtil.GetFriendTag(this.tag));
 		} else {
 			tmpvec = target.transform.position;
