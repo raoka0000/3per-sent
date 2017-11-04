@@ -108,10 +108,10 @@ public class Player : Actor {
 		transform.position = pos;
 
 		// 画面左下のワールド座標をビューポートから取得
-		Vector2 min = new Vector2(-9,-4);
+		Vector2 min = new Vector2(-9.89f,-4);
 
 		// 画面右上のワールド座標をビューポートから取得
-		Vector2 max = new Vector2(9,6);
+		Vector2 max = new Vector2(10.15f,6);
 
 		// プレイヤーの座標を取得
 		Vector2 pos2 = transform.position;
