@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9a1149a31b544bc8c3c7a14e8a2714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _leftDwon: {x: 0, y: 0}
+  _rightTop: {x: 0, y: 0}
 --- !u!4 &53381552
 Transform:
   m_ObjectHideFlags: 0
@@ -658,6 +660,7 @@ MonoBehaviour:
   reflection: {fileID: 198614041398620874, guid: ad1f207deb6a646bdb24785189d784a6,
     type: 2}
   kirakira: {fileID: 198539928464543660, guid: 503800aa2d4ba40b1b1cf5ba8481cea8, type: 2}
+  heal: {fileID: 198601886444840270, guid: 3bb3159ad24944f2f9e6597b2a0fcc39, type: 2}
 --- !u!4 &918251673
 Transform:
   m_ObjectHideFlags: 0
@@ -1464,7 +1467,7 @@ MonoBehaviour:
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
   - delayTime: 4
-    swen: {fileID: 11400000, guid: 92367e49e5efb4401810ee0f4c91c150, type: 2}
+    swen: {fileID: 11400000, guid: 6edcb9581447b4e8cafa83819f636774, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
@@ -1478,7 +1481,14 @@ MonoBehaviour:
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
   - delayTime: 4
-    swen: {fileID: 11400000, guid: be3b054bf9edc4615b544749cbb9b5fc, type: 2}
+    swen: {fileID: 11400000, guid: fd93e9c133f0a4492b58c973f4802e5d, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 4
+    swen: {fileID: 11400000, guid: 6edcb9581447b4e8cafa83819f636774, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
@@ -1505,15 +1515,29 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-  - delayTime: 10
-    swen: {fileID: 11400000, guid: 4bfbf35bcef054de4880d50990821ea0, type: 2}
+  - delayTime: 4
+    swen: {fileID: 11400000, guid: fd93e9c133f0a4492b58c973f4802e5d, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-  - delayTime: 10
-    swen: {fileID: 11400000, guid: 92367e49e5efb4401810ee0f4c91c150, type: 2}
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 51518a283167d49bd8a1757e78929eb9, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 51518a283167d49bd8a1757e78929eb9, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 30
+    swen: {fileID: 11400000, guid: 6edcb9581447b4e8cafa83819f636774, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
@@ -1528,6 +1552,13 @@ MonoBehaviour:
         PublicKeyToken=null
   - delayTime: 4
     swen: {fileID: 11400000, guid: 798e1c84c9f6346cf97155980dfc983e, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 4
+    swen: {fileID: 11400000, guid: bcffb7c41286e4d3b803c38197ff9e8c, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
@@ -1717,7 +1748,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: de647c7e2ef804c0aa796173dd5605d5, type: 2}
+  - {fileID: 2100000, guid: 72eab6dcbe10741a7859e53ead3bc028, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1811,7 +1842,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 107931201
+  randomSeed: -966862146
   InitialModule:
     serializedVersion: 3
     enabled: 1

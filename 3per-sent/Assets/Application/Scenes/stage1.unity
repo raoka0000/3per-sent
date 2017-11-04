@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9a1149a31b544bc8c3c7a14e8a2714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _leftDwon: {x: 0, y: 0}
+  _rightTop: {x: 0, y: 0}
 --- !u!4 &53381552
 Transform:
   m_ObjectHideFlags: 0
@@ -658,6 +660,7 @@ MonoBehaviour:
   reflection: {fileID: 198614041398620874, guid: ad1f207deb6a646bdb24785189d784a6,
     type: 2}
   kirakira: {fileID: 198539928464543660, guid: 503800aa2d4ba40b1b1cf5ba8481cea8, type: 2}
+  heal: {fileID: 198601886444840270, guid: 3bb3159ad24944f2f9e6597b2a0fcc39, type: 2}
 --- !u!4 &918251673
 Transform:
   m_ObjectHideFlags: 0
@@ -1478,6 +1481,13 @@ MonoBehaviour:
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
   - delayTime: 3
+    swen: {fileID: 11400000, guid: 6edcb9581447b4e8cafa83819f636774, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 3
     swen: {fileID: 11400000, guid: 3088fa00f81944b57b28883935803ec8, type: 2}
     action:
       m_PersistentCalls:
@@ -1521,6 +1531,13 @@ MonoBehaviour:
         PublicKeyToken=null
   - delayTime: 3
     swen: {fileID: 11400000, guid: 076a3bc62e4174e8dbacdd40937a7e16, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: bcffb7c41286e4d3b803c38197ff9e8c, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
@@ -1804,7 +1821,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 107931201
+  randomSeed: -1145735827
   InitialModule:
     serializedVersion: 3
     enabled: 1

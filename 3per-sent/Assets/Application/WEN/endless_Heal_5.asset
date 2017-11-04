@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 412d4ef4f491d44649841cacbba7f7b8, type: 3}
+  m_Name: endless_Heal_5
+  m_EditorClassIdentifier: 
+  enemys:
+  - {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
+  leftUpPoint: {x: -10, y: 5}
+  rightDwonPoint: {x: -10, y: -5}
+  prob: 0.01
+  during: 1000

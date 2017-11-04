@@ -15,12 +15,17 @@ public class ParticleManager : SingletonMonoBehaviour<ParticleManager> {
 	[SerializeField] ParticleSystem kirakira;
 	ParticleSystem _kirakira;
 
+	[SerializeField] ParticleSystem heal;
+	ParticleSystem _heal;
+
+
 
 
 	private void Awake (){
 		_hitEffectSimple = UnityUtil.GetPrefub<ParticleSystem> (hitEffectSimple, this.transform);
 		_reflection = UnityUtil.GetPrefub<ParticleSystem> (reflection, this.transform);
 		_kirakira = UnityUtil.GetPrefub<ParticleSystem> (kirakira, this.transform);
+		_heal = UnityUtil.GetPrefub<ParticleSystem> (heal, this.transform);
 	}
 
 	private Vector3 tmp = new Vector3 ();
@@ -51,6 +56,14 @@ public class ParticleManager : SingletonMonoBehaviour<ParticleManager> {
 		}
 		_kirakira.transform.position = pos;
 		_kirakira.Emit(n);
+	}
+
+	public void healEffect(Vector3 pos,int n = 10){
+		if (_heal == null) {
+			return;
+		}
+		_heal.transform.position = pos;
+		_heal.Emit(n);
 	}
 
 

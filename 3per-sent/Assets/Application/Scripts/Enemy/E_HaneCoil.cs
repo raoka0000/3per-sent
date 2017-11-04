@@ -49,8 +49,10 @@ public class E_HaneCoil : Enemy{
 		if(TagUtil.IsOpponentTag(this.tag,c.tag)){
 			
 			Actor actor = c.GetComponent<Actor>();
-			actor.Damaged(attack);
-			this.Damaged(maxHp);
+			if (actor is Enemy) {
+				actor.Damaged(attack);
+				this.Damaged(maxHp);
+			}
 		}
 	}
 

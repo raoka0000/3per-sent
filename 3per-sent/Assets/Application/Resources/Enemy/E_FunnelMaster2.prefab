@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hp: 0
-  _maxHp: 1000
+  _maxHp: 800
   bulletUnits: {fileID: 0}
   status: {fileID: 0}
   sprite: {fileID: 0}

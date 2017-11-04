@@ -130,6 +130,7 @@ public class Player : Actor {
 		if (status.ExistStatus (StatusType.muteki))return;//ステータスが無敵ならリターン.
 		IsScanMode = !IsScanMode;
 		if (IsScanMode) {
+			AudioManager.instance.PlaySE (DEFINE.MODE_CHENGE_SE, DEFINE.MODE_CHENGE_SE_CH);
 			this.bulletUnits.Stop (0);
 			this.sprite.color = Color.red;
 		} else {

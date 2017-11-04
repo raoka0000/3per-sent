@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eap:
   - enemy: {fileID: 1781622246418984, guid: 35012dff8fd1f4e30837884362732c34, type: 2}
-    pos: {x: 5, y: 3}
+    pos: {x: -10, y: 3}

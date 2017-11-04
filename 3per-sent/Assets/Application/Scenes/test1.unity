@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sat:
   - delayTime: 3
-    swen: {fileID: 11400000, guid: 40d268b65770a44249a62d328d951522, type: 2}
+    swen: {fileID: 11400000, guid: 51518a283167d49bd8a1757e78929eb9, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []
@@ -1757,6 +1757,20 @@ MonoBehaviour:
         PublicKeyToken=null
   - delayTime: 3
     swen: {fileID: 11400000, guid: 076a3bc62e4174e8dbacdd40937a7e16, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 51518a283167d49bd8a1757e78929eb9, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  - delayTime: 3
+    swen: {fileID: 11400000, guid: 1386cf90aa02642869e3d9adfc8e7b04, type: 2}
     action:
       m_PersistentCalls:
         m_Calls: []

@@ -45,6 +45,8 @@ public class UiManager : SingletonMonoBehaviour<UiManager> {
 	public void UpdateHp(int hp){
 		green.fillAmount = (float)hp / (float)EnvironmentEvent.instance.player.maxHp;
 	}
+		
+
 
 
 }

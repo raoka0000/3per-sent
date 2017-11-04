@@ -17,11 +17,13 @@ public class DEFINE{
 	public const float SE_VOLUME_DEFULT  = 0.8f;
 
 	public const int SHOT_SE_CH = 0;
+	public const int MODE_CHENGE_SE_CH = 1;
 	public const int PLAY_ONE_SHOT_SE_CH = 3;
 
 	public const string STEGE1_BGM = "8-bit Aggressive1";
 
 	public const string SHOT_SE = "shot";
+	public const string MODE_CHENGE_SE = "decision15";
 
 
 	public static readonly Color COLOR_MUTEKI_MODE = Color.yellow;

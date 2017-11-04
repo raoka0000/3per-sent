@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: WireFrame
+  m_Name: WireFrame3
   m_Shader: {fileID: 4800000, guid: 628540cc577aa46909f1401245ec4553, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_CustomRenderQueue: -1
@@ -18,7 +18,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _LineWidth: 0.01
+    - _LineWidth: 0.05
     m_Colors:
     - _GridColor: {r: 1, g: 1, b: 1, a: 0}
-    - _LineColor: {r: 0.27034464, g: 0.59997076, b: 0.8170417, a: 1}
+    - _LineColor: {r: 0.82969284, g: 0.5367647, b: 1, a: 1}

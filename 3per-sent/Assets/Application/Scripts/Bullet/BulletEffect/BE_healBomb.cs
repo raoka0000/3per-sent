@@ -17,6 +17,7 @@ public class BE_healBomb : BE_bomb {
 		if(TagUtil.IsFriendTag(this.gameObject.tag, c.gameObject.tag)){
 			Actor actor = c.gameObject.GetComponent<Actor> ();
 			if (actor == null) return;
+			ParticleManager.instance.healEffect (actor.gameObject.transform.position);
 			Heal (actor);
 		}
 
