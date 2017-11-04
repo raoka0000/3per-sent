@@ -1118,6 +1118,13 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
+  - delayTime: 4
+    swen: {fileID: 11400000, guid: bcffb7c41286e4d3b803c38197ff9e8c, type: 2}
+    action:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
 --- !u!4 &2025417923
 Transform:
   m_ObjectHideFlags: 0
