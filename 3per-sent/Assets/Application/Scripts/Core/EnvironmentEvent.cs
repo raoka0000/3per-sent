@@ -71,19 +71,34 @@ public class EnvironmentEvent : SingletonMonoBehaviour<EnvironmentEvent> {
 	}
 	public void gameclear(){
 		Debug.Log ("おめです");
-		if (DEFINE.isStoryMode) {
-			GotoJoker ();
-		} else {
-			string s = SceneManager.GetActiveScene ().name;
-			if (s == DEFINE.STAGE1_SCENE_NAME) {
-				SceneManager.LoadScene(DEFINE.STAGE2_SCENE_NAME);
-			}else if(s == DEFINE.STAGE2_SCENE_NAME){
-				SceneManager.LoadScene(DEFINE.STAGE3_SCENE_NAME);
-			}else if(s == DEFINE.STAGE3_SCENE_NAME){
-				SceneManager.LoadScene(DEFINE.TITLE_SCENE_NAME);
-			}
-		}
+        player.canMove = false;
+        player.status.AddStatus (StatusType.muteki);
+        player.transform.DOMove (new Vector2 (-8f, 0), 2f).OnComplete (
+            () => {
+                AudioManager.instance.PlaySE("shakin1");
+                player.transform.DOMove (new Vector2 (13f, 0), 2f).OnComplete (
+                    () => {
+                        GameClearEvent();
+                    }
+                ); 
+            }
+        );
 	}
+    public void GameClearEvent(){
+        if (DEFINE.isStoryMode) {
+            GotoJoker ();
+        } else {
+            string s = SceneManager.GetActiveScene ().name;
+            if (s == DEFINE.STAGE1_SCENE_NAME) {
+                SceneManager.LoadScene(DEFINE.STAGE2_SCENE_NAME);
+            }else if(s == DEFINE.STAGE2_SCENE_NAME){
+                SceneManager.LoadScene(DEFINE.STAGE3_SCENE_NAME);
+            }else if(s == DEFINE.STAGE3_SCENE_NAME){
+                SceneManager.LoadScene(DEFINE.TITLE_SCENE_NAME);
+            }
+        }
+
+    }
 
 	public void GotoTitle(){
 		AudioManager.instance.PlayBGM (DEFINE.STEGE1_BGM);

@@ -39,12 +39,21 @@ public class GameOverWindow : MonoBehaviour {
 		}
 		if(Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)){
 			if (cursor == 0) {
-				EnvironmentEvent.instance.GotoRetry ();
+				GotoRetry ();
 			} else {
-				EnvironmentEvent.instance.GotoTitle ();
+				GotoTitle ();
 			}
 		}
 	}
+	
+		public void GotoRetry(){
+			EnvironmentEvent.instance.GotoRetry ();
+		}
+
+		public void GotoTitle(){
+			EnvironmentEvent.instance.GotoTitle ();
+		}
+
 	void setcursor(int i){
 		_cursor = i;
 		if (_cursor == 0) {

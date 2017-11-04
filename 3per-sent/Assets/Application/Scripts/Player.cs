@@ -9,6 +9,9 @@ namespace PlayScene {
 public class Player : Actor {
 	private const float SCAN_STOPTIME = 0.5f;
 	private const float HIT_INVINCIBLE_TIME = 0.6f;
+	
+    public bool canMove = true;
+	
 
 	public SkillObject[] mySkill = new SkillObject[3];
 	[System.NonSerialized]
@@ -103,6 +106,7 @@ public class Player : Actor {
 	}
 
 	void Move(Vector2 direction){
+        if (!canMove) return;
 		Vector2 pos = transform.position;
 		pos += direction  * speed * myDeltaTime;
 		transform.position = pos;
