@@ -12,6 +12,7 @@ public class StageWaveEmitter : MonoBehaviour {
 		public StageWaveEmitterNode swen;
 		public UnityEvent action;
 	}
+	public int startNumber = 0;
 	public SwenAndTime[] sat;
 
 	void Start() {
@@ -19,14 +20,15 @@ public class StageWaveEmitter : MonoBehaviour {
 	}
 
 	IEnumerator Emit() {
-		foreach(SwenAndTime item in sat){
-			if (item.swen != null) {
-				FunctionIEnumerator func = item.swen.emit ();
+		for(int i = startNumber; i<sat.Length; i++){
+			if (sat[i].swen != null) {
+				FunctionIEnumerator func = sat[i].swen.emit ();
 				if (func != null) {
 					StartCoroutine (func ());
 				}
-				yield return new WaitForSeconds (item.delayTime);
+				yield return new WaitForSeconds (sat[i].delayTime);
 			}
+
 		}
 	}
 

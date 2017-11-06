@@ -45,7 +45,6 @@ public class E_HaneCoil : Enemy{
 	}
 
 	protected override void _OnTriggerEnter2D(Collider2D c){
-		Debug.Log(c.tag);
 		if(TagUtil.IsOpponentTag(this.tag,c.tag)){
 			
 			Actor actor = c.GetComponent<Actor>();

@@ -41,8 +41,16 @@ public class BE_bomb : BulletEffect {
 		actor.Hit (this);
 	}
 
+	private bool isBreaking = false;
 	public override void Break(){
-		this.gameObject.SetActive (false);
+		if (isBreaking) return;
+		isBreaking = true;
+		sequence.Kill ();
+		sprite.DOFade (0, 0.1f).SetEase (Ease.InQuart).OnKill(()=>{
+			this.gameObject.SetActive (false);
+			isBreaking = false;
+			Debug.Log ("ccc");
+		});
 	}
 
 	void OnTriggerEnter2D (Collider2D c){
