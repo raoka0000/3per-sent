@@ -16,9 +16,6 @@ MonoBehaviour:
   - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
   - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
   - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
-  - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
-  - {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
-  - {fileID: 1764659511277838, guid: 1b3f644a11b9842989c8cf4538a8deeb, type: 2}
   leftUpPoint: {x: 10, y: 5}
   rightDwonPoint: {x: 10, y: -5}
   prob: 0.01

@@ -266,7 +266,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   hasSkill: {fileID: 11400000, guid: 159931b6697024cc28e1b6aa34b64541, type: 2}
   shotInterval: 5
-  length: -30
+  speed: -2
 --- !u!212 &212180043910637504
 SpriteRenderer:
   m_ObjectHideFlags: 1

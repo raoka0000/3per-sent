@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eap:
   - enemy: {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
-    pos: {x: 13, y: 3}
+    pos: {x: 10, y: 2}
   - enemy: {fileID: 1641935440019322, guid: 5559fbf0c301247d9a6fedd09f85766b, type: 2}
-    pos: {x: 10, y: -3}
+    pos: {x: 11, y: -2}

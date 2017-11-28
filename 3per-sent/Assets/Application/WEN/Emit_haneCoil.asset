@@ -15,5 +15,5 @@ MonoBehaviour:
   - {fileID: 1484726231687984, guid: 7a3ada6c479b1419bba559299dfa0e71, type: 2}
   leftUpPoint: {x: 10, y: 5}
   rightDwonPoint: {x: 10, y: -5}
-  prob: 0.5
+  prob: 0.41
   during: 5

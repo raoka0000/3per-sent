@@ -15,4 +15,4 @@ MonoBehaviour:
   stratPoint: {x: 10, y: 3}
   endPoint: {x: 15, y: -2}
   count: 5
-  during: 0
+  during: 3
